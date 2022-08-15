@@ -1,0 +1,4 @@
+{
+    "imgLogo": "#header_logo img",
+    "signInButton": "nav a[class='login']"
+}

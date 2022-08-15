@@ -1,0 +1,29 @@
+{
+    "form": {
+        "validationTextRegistrationForm": "#noSlide h1",
+        "titleField": "#id_gender1",
+        "firstNameField": "#customer_firstname",
+        "lastNameField": "#customer_lastname",
+        "emailField": "#email",
+        "passwordField": "#passwd",
+        "dayOfBirth": "#days",
+        "monthsOfBirth": "#months",
+        "yearsOfBirth": "#years",
+        "checkBoxNewsLetter": "#newsletter",
+        "checkBoxSpecialOffers": "#optin",
+        "adressFirstNameField": "#firstname",
+        "adressLastNameField": "#lastname",
+        "companyField": "#company",
+        "adressField": "#address1",
+        "adressLineTwoField": "#address2",
+        "cityField": "#city",
+        "state": "#id_state",
+        "postalCodeField": "#postcode",
+        "countryField": "#id_country",
+        "additionalInformation": "#other",
+        "homePhoneField": "#phone",
+        "mobilePhoneField": "#phone_mobile",
+        "adressFutureReferenceField": "alias",
+        "registerButton": "#submitAccount"
+    }
+}

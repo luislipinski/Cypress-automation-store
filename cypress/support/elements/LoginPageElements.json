@@ -1,0 +1,5 @@
+{
+    "textCreateAnAccount": "#create-account_form h3",
+    "fieldEmail": "#email_create",
+    "buttonCreateAnAccount": "#SubmitCreate"
+}

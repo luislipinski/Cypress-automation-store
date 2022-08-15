@@ -1,0 +1,20 @@
+{
+    "data":{
+        "personalInfo": {
+            "email":"testluislipinski@email.com",
+            "firstName": "Luis",
+            "lastName" : "Teste",
+            "password": "teste123"
+        },
+        "yourAdress": {
+            "company": "automação",
+            "address": "rua teste primerio, 300",
+            "complement": "AP250",
+            "city": "teste",
+            "postalCode": "80650250",
+            "homePhone": "+55(11)996357280"
+            
+        }
+
+    }
+}
