@@ -1,7 +1,7 @@
 {
     "data":{
         "personalInfo": {
-            "email":"testluislipinski@email.com",
+            "email":"test2luislipinski@email.com",
             "firstName": "Luis",
             "lastName" : "Teste",
             "password": "teste123"
@@ -16,5 +16,9 @@
             
         }
 
+    },
+    "errorData": {
+        "emailerror":"testluislipinski@email.com",
+        "emailErrorForm": "testerrorluislipinski@email.com"
     }
 }

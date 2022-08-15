@@ -28,8 +28,22 @@ class RegisterAccountPage {
         cy.get(registerFormElements.form.homePhoneField).click().type(registerAccountData.data.yourAdress.homePhone)
         cy.get(registerFormElements.form.mobilePhoneField).click().type(registerAccountData.data.yourAdress.homePhone)
         cy.get(registerFormElements.form.adressFutureReferenceField).click().clear().type(registerAccountData.data.personalInfo.email)
-        cy.get(registerFormElements.form.registerButton).click()
         
+    }
+
+    submitTheRegister() {
+        cy.get(registerFormElements.form.registerButton).click()
+    }
+
+    errorMesage() {
+        cy.get(registerFormElements.formError.allerrorsform).eq(0).should('have.text', 'You must register at least one phone number.')
+        cy.get(registerFormElements.formError.allerrorsform).eq(1).should('have.text', 'lastname is required.')
+        cy.get(registerFormElements.formError.allerrorsform).eq(2).should('have.text', 'firstname is required.')
+        cy.get(registerFormElements.formError.allerrorsform).eq(3).should('have.text', 'passwd is required.')
+        cy.get(registerFormElements.formError.allerrorsform).eq(4).should('have.text', 'address1 is required.')
+        cy.get(registerFormElements.formError.allerrorsform).eq(5).should('have.text', 'city is required.')
+        cy.get(registerFormElements.formError.allerrorsform).eq(6).should('have.text', "The Zip/Postal code you've entered is invalid. It must follow this format: 00000")
+        cy.get(registerFormElements.formError.allerrorsform).eq(7).should('have.text', 'This country requires you to choose a State.')
     }
 }
 

@@ -27,6 +27,6 @@
         "registerButton": "#submitAccount"
     },
     "formError": {
-        
+        "allerrorsform": "div[class='alert alert-danger'] ol>li"
     }
 }

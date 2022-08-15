@@ -1,9 +1,9 @@
 Feature: Create account in Store
 
-    # Scenario: Create a account in the site Store
-    #     Given Acces the home page
-    #     When Access the forms for create account
-    #     Then fill the forms and submit
+    Scenario: Create a account in the site Store
+        Given Acces the home page
+        When Access the forms for create account
+        Then fill the forms and submit
 
     Scenario: Mensagem error invalid email
         Given Acces the home page
@@ -17,3 +17,10 @@ Feature: Create account in Store
         And fill the email exist
         And submit the Create an account
         Then valid the error mesage email exist
+
+    Scenario: mensage of error in form
+        Given Acces the home page
+        When Access the forms for create an account
+        And click in Register for submit the forms
+        Then Valid all error mensage
+        

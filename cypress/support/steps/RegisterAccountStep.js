@@ -18,7 +18,13 @@ Given("Acces the home page", () =>{
 When("Access the forms for create account", () => {
     homePage.accessLoginPage();
     loginPage.locateTextCreateAccount();
-    loginPage.fillTheemailInForm();
+    loginPage.fillTheemailInForm(registerAccountData.data.personalInfo.email);
+    loginPage.submitButtonCreateAnAccount();
+})
+When("Access the forms for create an account", () => {
+    homePage.accessLoginPage();
+    loginPage.locateTextCreateAccount();
+    loginPage.fillTheemailInForm(registerAccountData.errorData.emailErrorForm);
     loginPage.submitButtonCreateAnAccount();
 })
 
@@ -32,15 +38,20 @@ And("click in create an acount with email address enpty", () => {
 })
 
 And("fill the email exist", () => {
-    loginPage.fillTheemailInForm(registerAccountData.data.personalInfo.email);
+    loginPage.fillTheemailInForm(registerAccountData.errorData.emailerror);
 })
 
 And("submit the Create an account", () => {
     loginPage.submitButtonCreateAnAccount()
 })
 
+And("click in Register for submit the forms", () => {
+    registerAccountPage.submitTheRegister()
+})
+
 Then("fill the forms and submit", () => {
     registerAccountPage.fillTheForm()
+    registerAccountPage.submitTheRegister()
     userSecretPage.validationSecretPage()
 })
 
@@ -50,5 +61,9 @@ Then("valid the error mesage", () => {
 
 Then("valid the error mesage email exist", () => {
     loginPage.invalidEmail('An account using this email address has already been registered. Please enter a valid password or request a new one. ')
+})
+
+Then("Valid all error mensage", () => {
+    registerAccountPage.errorMesage()
 })
    
