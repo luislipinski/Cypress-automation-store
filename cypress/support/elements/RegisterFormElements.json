@@ -25,5 +25,8 @@
         "mobilePhoneField": "#phone_mobile",
         "adressFutureReferenceField": "#address_alias input",
         "registerButton": "#submitAccount"
+    },
+    "formError": {
+        
     }
 }

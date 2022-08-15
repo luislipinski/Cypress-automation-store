@@ -1,5 +1,8 @@
 {
     "textCreateAnAccount": "#create-account_form h3",
     "fieldEmail": "#email_create",
-    "buttonCreateAnAccount": "#SubmitCreate"
+    "buttonCreateAnAccount": "#SubmitCreate",
+    "error": {
+        "invalidEmail": "#create_account_error li"
+    }
 }
