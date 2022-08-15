@@ -23,7 +23,7 @@
         "additionalInformation": "#other",
         "homePhoneField": "#phone",
         "mobilePhoneField": "#phone_mobile",
-        "adressFutureReferenceField": "alias",
+        "adressFutureReferenceField": "#address_alias input",
         "registerButton": "#submitAccount"
     }
 }
