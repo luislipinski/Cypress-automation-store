@@ -1,6 +1,7 @@
 /// <reference types="Cypress" />
 
 import loginPageElements from "../elements/LoginPageElements.json"
+import loginAccountData from "../../fixtures/data/LoginAccountData.json"
 
 
 
@@ -21,6 +22,15 @@ class LoginPage {
 
     invalidEmail(mensage) {
         cy.get(loginPageElements.error.invalidEmail).should('have.text', mensage)
+    }
+
+    fillTheLogin() {
+        cy.get(loginPageElements.emailLogin).click().type(loginAccountData.email)
+        cy.get(loginPageElements.passwordLogin).click().type(loginAccountData.password)
+    }
+
+    submitLogin() {
+        cy.get(loginPageElements.LoginButton).click()
     }
 }
 
