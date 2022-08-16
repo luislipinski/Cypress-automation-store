@@ -7,6 +7,7 @@
     "LoginButton": "#SubmitLogin",
 
     "error": {
-        "invalidEmail": "#create_account_error li"
+        "invalidEmail": "#create_account_error li",
+        "invalidLogin": "#center_column li"
     }
 }
