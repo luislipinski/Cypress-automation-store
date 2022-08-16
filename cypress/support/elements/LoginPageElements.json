@@ -2,7 +2,12 @@
     "textCreateAnAccount": "#create-account_form h3",
     "fieldEmail": "#email_create",
     "buttonCreateAnAccount": "#SubmitCreate",
+    "emailLogin": "#email",
+    "passwordLogin": "#passwd",
+    "LoginButton": "#SubmitLogin",
+
     "error": {
-        "invalidEmail": "#create_account_error li"
+        "invalidEmail": "#create_account_error li",
+        "invalidLogin": "#center_column li"
     }
 }
