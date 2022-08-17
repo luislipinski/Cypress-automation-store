@@ -27,6 +27,15 @@ class HomePage {
         cy.get(homePageElements.btnProcedCheckout).click()
     }
 
+    accessTheCart() {
+        cy.get(homePageElements.cartIcon).click()
+    }
+
+    accessTheProduct(product) {
+        this.accessTheStore()
+        cy.get(homePageElements.imgIten).eq(product).click()
+    }
+
 
 }
 

@@ -1,0 +1,12 @@
+{
+    "adress": {
+        "validateAdress": "#address_delivery li h3",
+        "nameComplete": "#address_delivery li[class='address_firstname address_lastname']",
+        "company": "#address_delivery li[class='address_company']",
+        "adressComplete": "#address_delivery li[class='address_address1 address_address2']",
+        "cityStatePostCode": "#address_delivery li[class='address_city address_state_name address_postcode']",
+        "contact": "#address_delivery li[class='address_phone_mobile']"
+    },
+    "btnProcedToCheckout": "#columns form button"
+
+}

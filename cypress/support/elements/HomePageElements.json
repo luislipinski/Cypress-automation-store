@@ -4,6 +4,7 @@
     "imgIten": "#homefeatured li",
     "btnAddToCart": "#homefeatured a[data-id-product]",
     "btnProcedCheckout": "#layer_cart div[class='button-container'] a",
-    "validateModalAddCart": "#layer_cart"
+    "validateModalAddCart": "#layer_cart",
+    "cartIcon": "div[class='shopping_cart'] a[title='View my shopping cart']"
 
 }
