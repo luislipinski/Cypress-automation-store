@@ -20,12 +20,7 @@ Given("I want to buy a product", () => {
     homePage.itenOfStore(2);
     homePage.validateModalAddCart();
     homePage.procedToCheckout();
-    cartPage.itenCart();
-    cartPage.procedToCheckout();
-    loginPage.fillTheLogin("valido");
-    loginPage.submitLogin();
-    checkoutPage.validateAdress()
-    
+    cartPage.itenCart();    
 })
 
 When("i click in add to cart", () => {
@@ -46,7 +41,17 @@ When("i access my cart without add item", () => {
 })
 
 When("i make the purchase", () => {
-
+    cartPage.procedToCheckout();
+    loginPage.fillTheLogin("valido");
+    loginPage.submitLogin();
+    checkoutPage.validateAdress();
+    checkoutPage.validateShipping();
+    checkoutPage.acceptTermsOfService();
+    checkoutPage.btnProcedToCheckout();
+    checkoutPage.validatePayment('Printed Dress', '$26.00', 1, '$26.00', '$28.00');
+    checkoutPage.payBank();
+    checkoutPage.bankWirePayment();
+    checkoutPage.btnConfirmOrder();
 })
 
 Then("i can see my item in cart", () => {
@@ -58,5 +63,5 @@ Then("i can see my card empty", () => {
 })
 
 Then("I get the information that the purchase was made", () => {
-
+    checkoutPage.validateEndCheckout()
 })

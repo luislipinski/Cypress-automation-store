@@ -13,6 +13,46 @@ class CheckoutPage {
         cy.get(checkoutPageElements.adress.contact).should('have.text', registesAccountData.data.yourAdress.homePhone)
         cy.get(checkoutPageElements.btnProcedToCheckout).click()
     }
+
+    validateShipping() {
+        cy.get(checkoutPageElements.shipping).should('be.visible')
+    }
+
+    acceptTermsOfService() {
+        cy.get(checkoutPageElements.checkBoxTermsOfService).click()
+    }
+
+    btnProcedToCheckout() {
+        cy.get(checkoutPageElements.btnProcedToCheckout).click()
+    }
+
+    validatePayment(productName, unitPrice, qty, totalProduct, totalAllProduct) {
+        cy.get(checkoutPageElements.cartSummary.nameProduct).contains(productName)
+        cy.get(checkoutPageElements.cartSummary.priceProduct).contains(unitPrice)
+        cy.get(checkoutPageElements.cartSummary.qty).contains(qty)
+        cy.get(checkoutPageElements.cartSummary.priceTotalProduct).contains(totalProduct)
+        cy.get(checkoutPageElements.cartSummary.priceTotalAllProducts).contains(totalAllProduct)
+    }
+
+    payBank(){
+        cy.get(checkoutPageElements.btnPayBank).click()
+    }
+
+    payCheck() {
+        cy.get(checkoutPageElements.btnPayCheck).click()
+    }
+
+    bankWirePayment() {
+        cy.get(checkoutPageElements.bankWirePayment.textChoiceBankWirePayment).contains('You have chosen to pay by bank wire. Here is a short summary of your order:')
+    }
+
+    btnConfirmOrder() {
+        cy.get(checkoutPageElements.btnConfirmOrder).click()
+    }
+
+    validateEndCheckout() {
+        cy.get(checkoutPageElements.validateEndCheckout).should('have.text', 'Your order on My Store is complete.')
+    }
 }
 
 export default CheckoutPage;
