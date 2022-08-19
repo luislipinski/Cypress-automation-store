@@ -1,0 +1,35 @@
+{
+    "adress": {
+        "validateAdress": "#address_delivery li h3",
+        "nameComplete": "#address_delivery li[class='address_firstname address_lastname']",
+        "company": "#address_delivery li[class='address_company']",
+        "adressComplete": "#address_delivery li[class='address_address1 address_address2']",
+        "cityStatePostCode": "#address_delivery li[class='address_city address_state_name address_postcode']",
+        "contact": "#address_delivery li[class='address_phone_mobile']"
+    },
+    "cartSummary": {
+        "nameProduct": "tr td p[class='product-name'] a",
+        "avaible": "tr td[class='cart_avail'] span",
+        "priceProduct": "tr td[class='cart_unit'] span[class='price'] span",
+        "qty": "tr td[class='cart_quantity text-center'] span",
+        "priceTotalProduct": "tr td[class='cart_total'] span",
+        "priceTotalAllProducts": "#total_price",
+        "priceShipping": "#total_shipping",
+        "priceTotal": "total_price"
+    },
+    "bankWirePayment": {
+        "textChoiceBankWirePayment": "p strong[class='dark']"
+    },
+    "error": {
+        "errorTermsOfService": "div[class='fancybox-inner'] p"
+    },
+    "btnProcedToCheckout": "#columns form button",
+    "shipping": "#form tbody",
+    "checkBoxTermsOfService": "#cgv",
+    "btnPayBank": "#HOOK_PAYMENT a[class='bankwire']",
+    "btnPayCheck":"#HOOK_PAYMENT a[class='cheque']",
+    "btnConfirmOrder": "p button",
+    "validateEndCheckout": "div[class='box'] p strong"
+
+
+}
