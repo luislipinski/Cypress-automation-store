@@ -23,6 +23,19 @@ Given("I want to buy a product", () => {
     cartPage.itenCart();    
 })
 
+Given("I try purchase a product", () => {
+    homePage.accessTheStore();
+    homePage.itenOfStore(2);
+    homePage.validateModalAddCart();
+    homePage.procedToCheckout();
+    cartPage.itenCart(); 
+    cartPage.procedToCheckout();
+    loginPage.fillTheLogin("valido");
+    loginPage.submitLogin();
+    checkoutPage.validateAdress();
+    checkoutPage.validateShipping();
+})
+
 When("i click in add to cart", () => {
     homePage.itenOfStore(3);
     homePage.validateModalAddCart();
@@ -34,6 +47,11 @@ When("i add this iten in my cart", () => {
     itemPage.addToCart();
     homePage.validateModalAddCart();
     homePage.procedToCheckout();
+    cartPage.procedToCheckout();
+    loginPage.fillTheLogin("valido");
+    loginPage.submitLogin();
+    checkoutPage.validateAdress();
+    checkoutPage.validateShipping();
 })
 
 When("i access my cart without add item", () => {
@@ -54,6 +72,10 @@ When("i make the purchase", () => {
     checkoutPage.btnConfirmOrder();
 })
 
+When("i don't accept the terms of privacy polici", () => {
+    checkoutPage.btnProcedToCheckout();
+})
+
 Then("i can see my item in cart", () => {
     cartPage.itenCart();
 })
@@ -64,4 +86,8 @@ Then("i can see my card empty", () => {
 
 Then("I get the information that the purchase was made", () => {
     checkoutPage.validateEndCheckout()
+})
+
+Then("i see the error mensagem", () => {
+    checkoutPage.errorTermsOfService();
 })

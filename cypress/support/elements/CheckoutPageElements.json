@@ -20,6 +20,9 @@
     "bankWirePayment": {
         "textChoiceBankWirePayment": "p strong[class='dark']"
     },
+    "error": {
+        "errorTermsOfService": "div[class='fancybox-inner'] p"
+    },
     "btnProcedToCheckout": "#columns form button",
     "shipping": "#form tbody",
     "checkBoxTermsOfService": "#cgv",

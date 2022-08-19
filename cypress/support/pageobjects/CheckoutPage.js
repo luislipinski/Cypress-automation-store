@@ -22,6 +22,10 @@ class CheckoutPage {
         cy.get(checkoutPageElements.checkBoxTermsOfService).click()
     }
 
+    errorTermsOfService() {
+        cy.get(checkoutPageElements.error.errorTermsOfService).should('be.visible', 'have.text', 'You must agree to the terms of service before continuing.')
+    }
+
     btnProcedToCheckout() {
         cy.get(checkoutPageElements.btnProcedToCheckout).click()
     }
