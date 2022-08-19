@@ -47,11 +47,6 @@ When("i add this iten in my cart", () => {
     itemPage.addToCart();
     homePage.validateModalAddCart();
     homePage.procedToCheckout();
-    cartPage.procedToCheckout();
-    loginPage.fillTheLogin("valido");
-    loginPage.submitLogin();
-    checkoutPage.validateAdress();
-    checkoutPage.validateShipping();
 })
 
 When("i access my cart without add item", () => {

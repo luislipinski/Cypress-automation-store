@@ -15,12 +15,14 @@ Feature: Test purchase
         When i add this iten in my cart
         Then i can see my item in cart
 
+    Scenario: mensagem erro whent don't accept privacy polici
+        Given I try purchase a product
+        When i don't accept the terms of privacy polici
+        Then i see the error mensagem
+
     Scenario:Make a purchase of a product
         Given I want to buy a product
         When i make the purchase
         Then I get the information that the purchase was made
 
-    Scenario: mensagem erro whent don't accept privacy polici
-        Given I try purchase a product
-        When i don't accept the terms of privacy polici
-        Then i see the error mensagem
+
