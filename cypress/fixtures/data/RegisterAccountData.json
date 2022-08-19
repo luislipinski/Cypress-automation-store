@@ -1,7 +1,7 @@
 {
     "data":{
         "personalInfo": {
-            "email":"test2luislipinski@email.com",
+            "email":"testemailluislipinski@email.com",
             "firstName": "Luis",
             "lastName" : "Teste",
             "password": "teste123"
